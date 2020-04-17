@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const target = 'http://www.wings.msn.to';
+    const target = 'http://twugo.github.io/CrossDocumentMessagingTest';
 
     document.getElementById('btn').addEventListener('click', () => {
         document.getElementById('iframe').contentWindow.postMessage(
