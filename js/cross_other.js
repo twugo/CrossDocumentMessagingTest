@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('result').textContent = ev.data;
 
         // 現在の日付を返送
-        const current = new Data();
+        const current = new Date();
         ev.source.postMessage(current, origin);
     });
 });

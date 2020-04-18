@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const target = 'http://twugo.github.io/CrossDocumentMessagingTest';
+    const target = 'https://twugo.github.io/CrossDocumentMessagingTest';
 
     document.getElementById('btn').addEventListener('click', () => {
         document.getElementById('frame').contentWindow.postMessage(
@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.addEventListener('message', (ev) => {
-        if(ev.origin !== target) return;
+        if(ev.origin !== target){
+            console.log(ev.origin);
+            return;
+        }
         console.log(ev.data);
     });
 });
