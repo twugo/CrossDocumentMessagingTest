@@ -1,2 +1,4 @@
 # CrossDocumentMessagingTest
 クロスドキュメントメッセージングをテストするためのもの
+
+ローカルサーバのcross_main.htmlとリモートのcross_other.htmlでクロスオリジン通信をする
